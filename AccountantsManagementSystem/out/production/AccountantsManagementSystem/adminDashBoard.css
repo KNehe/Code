@@ -1,0 +1,80 @@
+#borderPane{
+-fx-background-color:#fff;
+}
+#buttonRegister{
+-fx-background-color:#3B0101;
+-fx-text-fill:white;
+}
+#buttonMonitor{
+-fx-background-color:#3B0101;
+-fx-text-fill:white;
+}
+#buttonSettings{
+-fx-background-color:#3B0101;
+-fx-text-fill:white;
+}
+#buttonEntertainment{
+-fx-background-color:#3B0101;
+-fx-text-fill:white;
+}
+
+//holder on left of the border pane holfing navigation
+#vBox{
+-fx-background-color:#3B0101;
+}
+
+//top of border pane->an hbox
+#top{
+-fx-background-color:#481D20;
+}
+
+//title on the side navigation->a label on the vbox
+#vboxTitle{
+-fx-background-color:#FA9D26;
+-fx-text-fill:white;
+}
+
+//working on hovering
+#buttonRegister:hover{
+-fx-background-color:#6F1F21;
+-fx-text-fill:white;
+}
+#buttonMonitor:hover{
+-fx-background-color:#6F1F21;
+-fx-text-fill:white;
+}
+#buttonSettings:hover{
+-fx-background-color:#6F1F21;
+-fx-text-fill:white;
+}
+#buttonEntertainment:hover{
+-fx-background-color:#6F1F21;
+-fx-text-fill:white;
+}
+#closeWindow:hover{
+-fx-text-fill:red;
+}
+#closeWindow{
+-fx-text-fill:white;
+}
+//end of hover design
+
+
+//styles for the registraton page
+//the vbox
+#titleRegister{
+-fx-background-color:#6F1F21;
+-fx-text-fill:white;
+}
+#vboxRegistrationform{
+-fx-effect:dropshadow(gaussian, #000, 7, 0, -1, 2);
+}
+//the pane holding the table view
+#tableview{
+-fx-border-color:white;
+-fx-focus-color:white;
+}
+#tablepane{
+-fx-effect:dropshadow(gaussian, #000, 7, 0, -1, 2);
+}
+

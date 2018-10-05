@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminDashboardController">
+   <left>
+      <VBox fx:id="vBox" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="vboxTitle" alignment="BASELINE_CENTER" prefHeight="86.0" prefWidth="201.0" text="Admin Panel" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="29.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding></Label>
+            <Button fx:id="buttonRegister" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminRegister" prefHeight="90.0" prefWidth="200.0" text="Register">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonMonitor" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#adminMonitor" prefHeight="90.0" prefWidth="200.0" text="Entertainment">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button fx:id="buttonEntertainment" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="90.0" prefWidth="200.0" text="Monitor">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button fx:id="buttonSettings" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="90.0" prefWidth="200.0" text="Settings">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="-45.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox fx:id="top" prefHeight="44.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="200.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="closeWindow" alignment="TOP_RIGHT" contentDisplay="TOP" onMouseClicked="#closeWindow" prefHeight="36.0" prefWidth="22.0" text="x">
+               <font>
+                  <Font name="Agency FB Bold" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="1130.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets right="4.0" top="-4.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <effect>
+      <Blend />
+   </effect>
+   <bottom>
+      <HBox prefHeight="15.0" prefWidth="1350.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <LineChart layoutX="21.0" layoutY="27.0" prefHeight="208.0" prefWidth="1017.0">
+                    <xAxis>
+                      <CategoryAxis prefHeight="0.0" prefWidth="960.0" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <Label fx:id="username" layoutX="14.0" layoutY="12.0" prefHeight="23.0" prefWidth="198.0" text="Label" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ProgressIndicator layoutX="188.0" layoutY="18.0" prefHeight="118.0" prefWidth="394.0" progress="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

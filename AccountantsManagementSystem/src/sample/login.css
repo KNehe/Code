@@ -1,0 +1,58 @@
+//style for the root->anchor pane
+.root{
+-fx-background-color:#3B0101;
+}
+//located on the left
+#vBox{
+-fx-background-color:A1030A;
+-fx-effect:dropshadow(gaussian, #FAA0A0, 9, 0, 0, 1);
+
+}
+//child of vBox->username field
+#loginUsername{
+-fx-background-color:A1030A;
+-fx-border-color:white;
+-fx-text-inner-color:white;
+-fx-prompt-text-fill:white;
+}
+//child of vbox->password field
+#loginPassword{
+-fx-background-color:A1030A;
+-fx-border-color:white;
+-fx-text-inner-color:white;
+-fx-prompt-text-fill:white;
+}
+//child of vbox->label
+#forgotPasswordLabel{
+-fx-text-fill:white;
+}
+//child of vbox
+#signInButton{
+-fx-background-color:FA9D26;
+-fx-text-fill:white;
+-fx-effect:dropshadow(gaussian, #000, 10, 0, -1, 2);
+}
+//first child of vbox
+#titleLogin{
+-fx-text-fill:white;
+}
+//top right corner
+#closeLabel{
+-fx-text-fill:white;
+}
+//changing color on hover of top right corner label
+#closeLabel:hover{
+-fx-text-fill:red;
+}
+#registrationAnchorPane{
+-fx-background-color:A1030A;
+}
+//company title
+#companyTitle{
+-fx-text-fill:white;
+}
+#signUpButton{
+-fx-background-color:FA9D26;
+-fx-text-fill:white;
+-fx-effect:dropshadow(gaussian, #000, 10, 0, -1, 2);
+}

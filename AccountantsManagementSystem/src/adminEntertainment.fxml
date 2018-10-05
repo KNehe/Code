@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import org.controlsfx.control.spreadsheet.SpreadsheetView?>
+
+<AnchorPane prefHeight="613.0" prefWidth="1145.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entertainmentController">
+   <children>
+      <Pane fx:id="mediaViewPane" layoutX="19.0" layoutY="4.0" prefHeight="527.0" prefWidth="932.0" style="-fx-effect: dropshadow(gaussian, #000, 10, 0, -1, 2); -fx-background-color: white;">
+         <children>
+            <MediaView fx:id="mediaView" layoutX="1.0" layoutY="1.0" />
+         </children></Pane>
+      <Button fx:id="play" layoutX="20.0" layoutY="566.0" mnemonicParsing="false" onAction="#playVideo" text="Play" />
+      <Button fx:id="Pause" layoutX="71.0" layoutY="566.0" mnemonicParsing="false" onAction="#pauseVideo" text="Pause" />
+      <Button fx:id="Stop" layoutX="126.0" layoutY="566.0" mnemonicParsing="false" onAction="#stopVideo" text="Stop" />
+      <Slider fx:id="volumeSlider" layoutX="181.0" layoutY="572.0" prefHeight="14.0" prefWidth="279.0" />
+      <ListView fx:id="mediaList" layoutX="960.0" layoutY="42.0" prefHeight="489.0" prefWidth="200.0" />
+      <TextField layoutX="960.0" layoutY="14.0" prefHeight="25.0" prefWidth="220.0" promptText="Search" />
+      <Button layoutX="974.0" layoutY="554.0" mnemonicParsing="false" onAction="#chooseMedia" text="Add to playlist" />
+      <Button layoutX="1078.0" layoutY="554.0" mnemonicParsing="false" onAction="#setMediaList" text="View playlist" />
+   </children>
+</AnchorPane>
